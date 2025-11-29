@@ -1,0 +1,14 @@
+.contact {
+  font-family: monospace;
+  background: var(--bg-primary);
+}
+
+.contact .btn {
+  background: var(--blue) !important;
+  border-radius: 4px !important;
+  color: var(--white);
+}
+
+.contact .shadow {
+  box-shadow: var(--shadow-md);
+}

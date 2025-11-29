@@ -1,0 +1,214 @@
+.mobile-nav-icon {
+  display: none !important;
+}
+
+.navbar-list {
+  height: 2rem;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-list li {
+  margin-right: 1rem;
+}
+
+.navbar-list li a {
+  font-weight: 500;
+  color: var(--text-secondary);
+  transition: all 0.3s ease;
+  position: relative;
+  padding: 0.5rem 0;
+}
+
+.navbar-list li a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--gradient-start), var(--gradient-end));
+  transition: width 0.3s ease;
+}
+
+.navbar-list li a:is(:hover, .active) {
+  color: var(--accent-color);
+}
+
+.navbar-list li a:hover::after {
+  width: 100%;
+}
+
+.navbar-list li .home-link {
+  position: relative;
+}
+
+.navbar-list li .home-link .cart-trolly {
+  color: var(--text-secondary);
+  transition: color 0.3s ease;
+}
+
+.navbar-list li .home-link:hover .cart-trolly {
+  color: var(--accent-color);
+}
+
+.navbar-list li a .carttotal {
+  background: linear-gradient(135deg, #ef4444, #dc2626);
+  position: absolute;
+  top: -15%;
+  left: 50%;
+  font-size: 12px;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  color: white;
+  text-align: center;
+  line-height: 25px;
+  box-shadow: 0 2px 8px rgba(239, 68, 68, 0.4);
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+}
+
+.loginbtn button {
+  border: none;
+  outline: none;
+  padding: 0.625rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: var(--shadow-sm);
+}
+
+.loginbtn .login-btn {
+  background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+  color: white;
+}
+
+.loginbtn .login-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(59, 130, 246, 0.4);
+}
+
+.loginbtn .logout-btn {
+  background: var(--bg-accent);
+  color: var(--text-primary);
+}
+
+.loginbtn .logout-btn:hover {
+  background: #ef4444;
+  color: white;
+}
+
+.loginbtn .welcome-message {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  background: var(--bg-accent);
+  transition: all 0.3s ease;
+}
+
+.loginbtn .welcome-message:hover {
+  background: var(--accent-color);
+  transform: translateY(-2px);
+}
+
+.loginbtn .welcome-message:hover .greeting {
+  color: white;
+}
+
+.loginbtn .welcome-message .user-photo {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid var(--accent-color);
+}
+
+.loginbtn .welcome-message .greeting {
+  color: var(--text-primary);
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+@media (max-width: 776px) {
+  .navbar {
+    position: fixed;
+    top: 64px;
+    right: -100%;
+    width: 100%;
+    height: calc(100vh - 72px);
+    background: var(--bg-primary);
+    display: flex;
+    flex-direction: column;
+    transition: right 0.4s ease;
+    z-index: 999;
+    overflow-y: auto;
+  }
+
+  .activenav {
+    right: 0;
+  }
+
+  .mobile-nav-icon {
+    display: unset !important;
+  }
+
+  .navbar-list {
+    flex-direction: column;
+    padding: 2rem;
+    gap: 1.5rem;
+    height: auto;
+  }
+
+  .navbar-list li {
+    margin-bottom: 0;
+    margin-right: 0;
+    width: 100%;
+  }
+
+  .navbar-list .nav-link {
+    font-size: 1.25rem;
+    display: block;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+  }
+
+  .navbar-list .nav-link:hover {
+    background: var(--bg-accent);
+  }
+
+  .close-outline {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+  }
+
+  .navbar-list li a .carttotal {
+    top: -5%;
+    left: 70%;
+  }
+
+  .loginbtn {
+    width: 100%;
+  }
+
+  .loginbtn button {
+    width: 100%;
+  }
+
+  .loginbtn .welcome-message {
+    width: 100%;
+    justify-content: center;
+  }
+}

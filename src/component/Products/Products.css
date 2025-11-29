@@ -1,0 +1,10 @@
+.product_wrapper{
+    margin-top: 72px;
+  background: var(--bg-primary);
+
+}
+@media (max-width:992px) {
+    .product_wrapper{
+        padding: 0px 15px;
+    }
+}
