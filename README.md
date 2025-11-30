@@ -1,16 +1,42 @@
-# React + Vite
+Eccomerse – React JS 19 (Version 2)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Eccoverse Version 2 is a fully modernized React application featuring improved UI/UX, complete code refactoring, Firebase authentication, theme support, and API integration.
+This version includes major improvements over V1 due to API-key handling challenges, which required rewriting multiple modules and enhancing the project structure.
 
-Currently, two official plugins are available:
+🚀 What’s New in Version 2
+✅ Code Refactoring
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Entire project updated due to API key management issues
 
-## React Compiler
+Improved file structure & optimized API calls
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Better error handling
 
-## Expanding the ESLint configuration
+🎨 UI/UX Improvements
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Updated and modern styling
+Redesigned layout
+Responsive improvements
+Theme system (Light / Dark Mode)
+
+🔥 Firebase Authentication
+
+Google Sign-In 
+Secure user session management
+Protected Routes
+
+🧩 New Features
+
+Theme toggle switch
+Better state management
+Updated components
+Enhanced loading and error screens
+
+🛠️ Tech Stack
+
+React JS
+Firebase Authentication
+React Router
+Context API / Redux (edit depending on your project)
+CSS / SCSS / Tailwind (edit based on what you use)
+GitHub Pages (Hosting)
