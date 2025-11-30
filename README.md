@@ -21,8 +21,7 @@ Theme system (Light / Dark Mode)
 
 🔥 Firebase Authentication
 
-Email/Password login
-Google Sign-In (if you added it)
+Google Sign-In 
 Secure user session management
 Protected Routes
 
