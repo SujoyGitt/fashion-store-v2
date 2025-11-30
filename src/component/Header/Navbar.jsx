@@ -17,10 +17,9 @@ const Navbar = ({menuIcon, setmenuIcon}) => {
 
   const [user, setUser] = useState(null);
 
-  // 🔥 Listen to login state (runs on refresh too)
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
-      setUser(currentUser);   // if logged in → user; if logged out → null
+      setUser(currentUser);   
     });
 
     return () => unsubscribe();

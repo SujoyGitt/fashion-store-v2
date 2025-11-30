@@ -70,6 +70,7 @@
   background: var(--bg-accent);
   border-radius: 12px;
   border: 1px solid var(--border-color);
+  color: var(--text-primary);
 }
 
 .product-count-badge span {
