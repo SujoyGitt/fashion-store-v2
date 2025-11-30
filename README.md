@@ -1,4 +1,4 @@
-Eccoverse – React JS (Version 2)
+Eccomerse – React JS 19 (Version 2)
 
 Eccoverse Version 2 is a fully modernized React application featuring improved UI/UX, complete code refactoring, Firebase authentication, theme support, and API integration.
 This version includes major improvements over V1 due to API-key handling challenges, which required rewriting multiple modules and enhancing the project structure.
