@@ -37,6 +37,6 @@ Enhanced loading and error screens
 React JS
 Firebase Authentication
 React Router
-Context API / Redux (edit depending on your project)
-CSS / SCSS / Tailwind (edit based on what you use)
-GitHub Pages (Hosting)
+Context API
+CSS
+GitHub Pages -  https://sujoygitt.github.io/fashion-store-v2
